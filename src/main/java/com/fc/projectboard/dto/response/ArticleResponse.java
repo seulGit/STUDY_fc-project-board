@@ -12,11 +12,11 @@ public record ArticleResponse(Long id, String title, String content, String hash
     }
 
     public static ArticleResponse from(ArticleDto dto) {
-        String nickname = dto.userAccoutDto().nickname();
+        String nickname = dto.userAccountDto().nickname();
         if (nickname == null || nickname.isBlank()) {
-            nickname = dto.userAccoutDto().userId();
+            nickname = dto.userAccountDto().userId();
         }
 
-        return new ArticleResponse(dto.id(), dto.title(), dto.content(), dto.hashtag(), dto.createdAt(), dto.userAccoutDto().email(), nickname);
+        return new ArticleResponse(dto.id(), dto.title(), dto.content(), dto.hashtag(), dto.createdAt(), dto.userAccountDto().email(), nickname);
     }
 }
