@@ -42,7 +42,7 @@
     margin-bottom: 1.875rem;
 }
 
-@media (min-width: 992px){
+@media (min-width: 992px) {
     .col-lg-2 {
         flex: 0 0 16.66667%;
         max-width: 16.66667%;
@@ -52,6 +52,7 @@
 .card-margin {
     margin-bottom: 1.875rem;
 }
+
 .card {
     border: 0;
     box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
@@ -59,6 +60,7 @@
     -moz-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
     -ms-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
 }
+
 .card {
     position: relative;
     display: flex;
